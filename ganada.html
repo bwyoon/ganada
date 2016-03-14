@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>GANADA (HTML5 version) </title>
+<meta charset="utf-8">
+<meta name="description" content="GANADA (HTML5 version)" />
+<meta name="keywords" content="GANADA (HTML5 version)" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+
+<!--
+<link rel="apple-touch-icon" href="ganada-icon-57.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="ganada-icon-72.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="ganada-icon-114.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="ganada-icon-144.png" />
+-->
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="ganada.css">
+
+<script type="text/javascript" src="ganada.js"></script>
+</head>
+
+<body onLoad="StartGame()">
+
+<div id="gamepanel">
+  <button id="replaybutton" type="button" onClick="Replay()">Replay</button>
+  <div id="level-div">
+    <label for="level">Level: </label>
+    <select id="level">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+    </select>
+  </div>
+  <div id="time-div"> 0</div>
+  <div id="tilesize-div">
+    <label for="tilesize">Size: </label>
+    <select id="tilesize" onChange="Redraw()">
+      <option value="24">S</option>
+      <option value="32" selected>M</option>
+      <option value="45">L</option>
+      <option value="60">XL</option>
+    </select>
+  </div>
+
+</div>
+
+</body>
+
+</html>
